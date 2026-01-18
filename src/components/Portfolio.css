@@ -1,0 +1,107 @@
+/* Portfolio Section */
+.portfolio-section {
+    padding: 4rem 0;
+    background-color: #f0f0f5;
+  }
+
+[data-theme="dark"] .portfolio-section {
+    background-color: #1e1e1e;
+  }
+  
+  /* Section Title */
+  .portfolio-section .section-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #C33764;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  
+  [data-theme="dark"] .portfolio-section .section-title {
+    color: #ff6b9d;
+  }
+  
+  /* Section Subtitle */
+  .portfolio-section .section-subtitle {
+    font-size: 1.2rem;
+    color: #555;
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+  }
+
+  [data-theme="dark"] .portfolio-section .section-subtitle {
+    color: #cccccc;
+  }
+  
+  /* Service Cards */
+  .portfolio-section .paper {
+    background: #fff;
+    color: #333;
+    padding: 2.5rem;
+    text-align: center;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  [data-theme="dark"] .portfolio-section .paper {
+    background: #2c2c2c;
+    color: #ffffff;
+  }
+  
+  /* Hover Effect */
+  .portfolio-section .paper:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Service Icons */
+  .portfolio-section .icon {
+    font-size: 70px;
+    color: #C33764;
+    margin-bottom: 1.2rem;
+    transition: color 0.3s ease;
+  }
+  
+  .portfolio-section .paper:hover .icon {
+    color: #1D2671;
+  }
+  
+  /* Service Titles */
+  .portfolio-section .service-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    color: #1D2671;
+  }
+  
+  /* Service Descriptions */
+  .portfolio-section .service-description {
+    font-size: 1rem;
+    color: #777;
+    margin-top: 0.8rem;
+    line-height: 1.6;
+    max-width: 85%;
+  }
+  
+  /* Responsive Typography and Layout */
+  @media (min-width: 768px) {
+    .portfolio-section .service-title {
+      font-size: 1.8rem;
+    }
+  
+    .portfolio-section .service-description {
+      font-size: 1.1rem;
+    }
+  }
+  

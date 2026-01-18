@@ -1,0 +1,269 @@
+/* General Styling */
+.home-container {
+    padding: 20px;
+}
+
+[data-theme="dark"] .home-container {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Hero Section Styling */
+.hero {
+    height: 80vh;
+    position: relative; /* Ensure positioning for the overlay */
+    overflow: hidden; /* Prevent overflow from carousel */
+}
+
+/* Content Section Styling */
+.content {
+    position: relative; /* Overlay on carousel */
+    text-align: center;
+    z-index: 10; /* Ensures content is above carousel */
+    color: white; /* White text for visibility */
+    padding: 20px; /* Padding for better spacing */
+}
+
+/* Content Text Styles */
+.content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(45deg, #C33764, #1D2671);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better readability */
+}
+
+.content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Text shadow for better readability */
+    color: #FFD700; /* Yellow text color */
+}
+
+/* Call to Action Button */
+.cta-btn {
+    background-color: #C33764;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform for effect */
+    text-decoration: none;
+}
+
+.cta-btn:hover {
+    background-color: #1D2671;
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Arrow Styling */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 20; /* Ensure arrows are above the carousel */
+    transition: background-color 0.3s ease;
+}
+
+.arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+}
+
+.next {
+    right: 20px; /* Adjust position for better spacing */
+}
+
+.prev {
+    left: 20px; /* Adjust position for better spacing */
+}
+
+/* Carousel Styling */
+.slick-slider {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 15px; /* Rounded corners for the carousel */
+    overflow: hidden; /* Prevents overflow from rounded corners */
+}
+
+.slick-slide {
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.slick-slide img {
+    width: 100%;
+    height: 600px; /* Consistent height for images */
+    object-fit: cover;
+    border-radius: 15px; /* Match carousel border radius */
+}
+
+/* Active Slide */
+.slick-active img {
+    transform: scale(1.05); /* Slightly scale up the active slide */
+    opacity: 1; /* Ensure the active slide is fully opaque */
+}
+
+/* Carousel Dots */
+.slick-dots {
+    bottom: 30px; /* Position dots above the bottom */
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.slick-dots li {
+    margin: 0 8px; /* Improved spacing between dots */
+}
+
+.slick-dots button {
+    background-color: transparent; /* Clear background */
+    border: 2px solid rgba(255, 255, 255, 0.8); /* White border for dots */
+    width: 12px; /* Small dots */
+    height: 12px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add transform effect */
+}
+
+.slick-dots .slick-active button {
+    background-color: #C33764; /* Active dot color */
+    transform: scale(1.2); /* Enlarge active dot */
+}
+
+/* Optional: Fade effect for the entire carousel */
+.slick-slide {
+    opacity: 0.6; /* Make non-active slides semi-transparent */
+}
+
+.slick-active {
+    opacity: 1; /* Make the active slide fully opaque */
+}
+
+/* Additional Content Styling */
+.additional-content {
+    max-width: 800px;
+    margin: 40px auto; /* Increased margin to separate from carousel */
+    padding: 20px;
+}
+
+.additional-content h2 {
+    color: #C33764;
+    margin-top: 2rem;
+    font-size: 2rem; /* Increase size for emphasis */
+}
+
+.additional-content p {
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.additional-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.additional-content ul li {
+    margin: 0.5rem 0;
+}
+
+/* Testimonials Styling */
+.testimonials-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+/* Testimonial Card */
+.testimonial-card {
+    margin: 1rem;
+    width: 90%;
+    max-width: 400px;
+    background: linear-gradient(45deg, #C33764, #1D2671);
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Rounded corners for testimonial cards */
+    padding: 15px; /* Padding for content */
+    display: flex; /* Use flexbox for card layout */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: space-between; /* Ensure content is spaced evenly */
+    min-height: 250px; /* Minimum height for equal sizing */
+}
+
+/* Ensure CardContent uses full height */
+.testimonial-card .MuiCardContent-root {
+    flex: 1; /* Allow content to grow */
+    display: flex; /* Use flexbox for content layout */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+/* Text Styles */
+.testimonial-card h6,
+.testimonial-card p {
+    color: #ffcc00; /* Maintain yellow text for readability */
+    margin: 0; /* Reset margins for consistent spacing */
+}
+
+/* Scroll to Top Button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #C33764;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 15px 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+.scroll-to-top:hover {
+    background-color: #1D2671;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content h1 {
+        font-size: 2.5rem; /* Adjust for smaller screens */
+    }
+
+    .content p {
+        font-size: 1.2rem;
+    }
+
+    .cta-btn {
+        font-size: 1rem; /* Adjust button font size */
+        padding: 10px 20px; /* Adjust padding for smaller screens */
+    }
+
+    .testimonial-card {
+        width: 100%; /* Full width on smaller screens */
+        min-height: 200px; /* Adjust for smaller screens */
+    }
+
+    .slick-slide img {
+        height: 300px; /* Adjust carousel image height for smaller screens */
+    }
+}
+
+/* Avatar Styling */
+.testimonial-avatar {
+    width: 80px; /* Set desired width */
+    height: 80px; /* Set desired height */
+    margin: 0 auto; /* Centering */
+}

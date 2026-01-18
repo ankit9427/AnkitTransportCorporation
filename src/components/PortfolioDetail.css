@@ -1,0 +1,178 @@
+.portfolio-detail-section {
+  padding: 60px 20px;
+  min-height: calc(100vh - 200px);
+  background-color: #f5f5f5;
+}
+
+[data-theme="dark"] .portfolio-detail-section {
+  background-color: #1e1e1e;
+}
+
+.detail-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.icon-box {
+  margin-bottom: 20px;
+}
+
+.icon-box svg {
+  font-size: 80px;
+  color: #ff9800;
+}
+
+[data-theme="dark"] .icon-box svg {
+  color: #ffb74d;
+}
+
+.portfolio-title {
+  font-weight: bold;
+  color: #333;
+}
+
+[data-theme="dark"] .portfolio-title {
+  color: #fff;
+}
+
+.detail-card {
+  background-color: #fff;
+  border: none;
+  border-radius: 8px;
+}
+
+[data-theme="dark"] .detail-card {
+  background-color: #2c2c2c;
+}
+
+.detail-subheading {
+  font-weight: 600;
+  color: #333;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+[data-theme="dark"] .detail-subheading {
+  color: #fff;
+}
+
+.detail-text {
+  color: #666;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+[data-theme="dark"] .detail-text {
+  color: #ccc;
+}
+
+.highlights-list {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+[data-theme="dark"] .highlights-list {
+  background-color: #2c2c2c;
+}
+
+.list-item {
+  padding: 12px 16px;
+  border-bottom: 1px solid #eee;
+}
+
+[data-theme="dark"] .list-item {
+  border-bottom-color: #444;
+}
+
+.list-item:last-child {
+  border-bottom: none;
+}
+
+.list-icon {
+  color: #ff9800;
+  min-width: 40px;
+}
+
+[data-theme="dark"] .list-icon {
+  color: #ffb74d;
+}
+
+.list-text {
+  color: #333;
+  font-weight: 500;
+}
+
+[data-theme="dark"] .list-text {
+  color: #fff;
+}
+
+.back-button {
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #f57c00;
+}
+
+[data-theme="dark"] .back-button {
+  background-color: #ff9800;
+}
+
+[data-theme="dark"] .back-button:hover {
+  background-color: #ffb74d;
+}
+
+.contact-button {
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.contact-button:hover {
+  background-color: #1976d2;
+}
+
+[data-theme="dark"] .contact-button {
+  background-color: #2196f3;
+}
+
+[data-theme="dark"] .contact-button:hover {
+  background-color: #42a5f5;
+}
+
+@media (max-width: 768px) {
+  .portfolio-detail-section {
+    padding: 40px 15px;
+  }
+
+  .portfolio-title {
+    font-size: 1.75rem;
+  }
+
+  .detail-header {
+    margin-bottom: 30px;
+  }
+
+  .icon-box svg {
+    font-size: 60px;
+  }
+
+  .detail-subheading {
+    font-size: 1.25rem;
+  }
+}

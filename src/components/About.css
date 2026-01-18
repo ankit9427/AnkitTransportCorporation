@@ -1,0 +1,141 @@
+/* Container Styles */
+.about-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+
+[data-theme="dark"] .about-container {
+    background-color: #2c2c2c;
+    color: #ffffff;
+}
+  
+  .about-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Headings */
+  .about-container h2 {
+    color: #C33764;
+    font-size: 2.8rem;
+    margin-bottom: 25px;
+    text-align: center;
+    font-weight: 700;
+    border-bottom: 4px solid #C33764;
+    padding-bottom: 12px;
+    letter-spacing: 1.5px; /* Enhanced text spacing */
+  }
+
+[data-theme="dark"] .about-container h2 {
+    color: #ff6b9d;
+    border-bottom-color: #ff6b9d;
+}
+  
+  .about-container h3 {
+    color: #1D2671;
+    font-size: 2rem;
+    margin-top: 35px;
+    margin-bottom: 18px;
+    font-weight: 600;
+    border-left: 5px solid #1D2671;
+    padding-left: 15px; /* Add a decorative left border */
+  }
+
+[data-theme="dark"] .about-container h3 {
+    color: #90caf9;
+    border-left-color: #90caf9;
+}
+  
+  /* Paragraphs */
+  .about-container p {
+    margin-bottom: 22px;
+    font-size: 1.15rem;
+    line-height: 1.6; /* Improve readability */
+    color: #333;
+    transition: color 0.3s, background-color 0.3s; /* Smoother transition */
+  }
+
+[data-theme="dark"] .about-container p {
+    color: #cccccc;
+}
+  
+  .about-container p:hover {
+    color: #C33764;
+    background-color: rgba(195, 55, 100, 0.05); /* Subtle background on hover */
+    padding: 8px; /* Add slight padding for effect */
+  }
+
+[data-theme="dark"] .about-container p:hover {
+    color: #ff6b9d;
+    background-color: rgba(255, 107, 157, 0.1);
+}
+  
+  /* Lists */
+  .about-container ul {
+    margin: 25px 0;
+    padding-left: 25px;
+    list-style: none;
+  }
+  
+  .about-container li {
+    position: relative;
+    margin-bottom: 18px;
+    padding-left: 30px;
+    font-size: 1.05rem;
+    color: #555;
+    line-height: 1.5;
+    transition: color 0.3s ease; /* Add smooth color change */
+  }
+  
+  .about-container li:hover {
+    color: #C33764;
+  }
+  
+  .about-container li::before {
+    content: "➤";
+    color: #C33764;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    font-size: 1.3rem; /* Slightly larger bullet */
+  }
+  
+  /* Links */
+  .about-container a {
+    color: #C33764;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s, text-decoration 0.3s;
+    border-bottom: 2px solid transparent; /* Underline effect */
+  }
+  
+  .about-container a:hover {
+    color: #1D2671;
+    border-bottom: 2px solid #1D2671; /* Underline on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .about-container {
+      padding: 25px;
+      margin: 20px;
+    }
+  
+    .about-container h2 {
+      font-size: 2.2rem;
+    }
+  
+    .about-container h3 {
+      font-size: 1.6rem;
+    }
+  
+    .about-container p {
+      font-size: 1rem;
+    }
+  }
+  
