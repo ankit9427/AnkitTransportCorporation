@@ -33,11 +33,11 @@ function Contact() {
   const [snackbarMessage, setSnackbarMessage] = useState("");
   const [snackbarSeverity, setSnackbarSeverity] = useState("success");
 
-  const handleOpenMessage = () => {
-    setIsQuotation(false);
-    setOpenModal(true);
-    resetForm();
-  };
+  // const handleOpenMessage = () => {
+  //   setIsQuotation(false);
+  //   setOpenModal(true);
+  //   resetForm();
+  // };
 
   const handleOpenQuotation = () => {
     setIsQuotation(true);

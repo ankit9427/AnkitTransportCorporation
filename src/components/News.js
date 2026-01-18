@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Typography, Grid, Card, CardContent, CardMedia, Button, Chip } from "@mui/material";
+import { Container, Typography, Grid, Card, CardContent, CardMedia } from "@mui/material";
 import { motion } from "framer-motion";
 import "./News.css";
 
